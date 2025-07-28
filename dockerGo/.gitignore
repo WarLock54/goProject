@@ -1,0 +1,29 @@
+# Binary dosyalar
+main
+*.out
+*.exe
+
+# Ortam dosyaları
+.env
+*.env
+
+# Mod cache (Go indirect dependencies)
+go.sum
+
+# OS ve editor dosyaları
+*.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Log ve geçici dosyalar
+*.log
+tmp/
+logs/
+test-results/
+
+# Node.js varsa (örneğin bir UI dizininde)
+node_modules/
+
+# Gitignore'un kendisini ignore etme :)
+!.gitignore

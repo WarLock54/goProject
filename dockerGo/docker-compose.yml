@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: go_api
+    ports:
+      - "9001:9001"
+    env_file:
+      - .env
+    volumes:
+      - .env:/app/.env

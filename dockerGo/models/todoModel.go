@@ -2,6 +2,7 @@ package models
 
 import (
 	"github.com/golang-jwt/jwt/v4"
+	"golang.org/x/time/rate"
 	"gorm.io/gorm"
 )
 
@@ -11,8 +12,11 @@ type Credentials struct {
 	Password string `json:"password"`
 }
 
+// Create a struct to hold each client's rate limiter
+type Client struct {
+	Limiter *rate.Limiter
+}
 type Claims struct {
-	gorm.Model
 	Username string `json:"username"`
 	jwt.RegisteredClaims
 }

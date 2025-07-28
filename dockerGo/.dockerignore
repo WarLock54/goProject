@@ -1,0 +1,21 @@
+# Git klasörü
+.git
+.gitignore
+
+# Derleme çıktısı
+main
+*.out
+*.exe
+
+
+# IDE ve OS dosyaları
+.vscode
+.idea
+*.DS_Store
+Thumbs.db
+
+# Diğer büyük veya gereksiz klasörler
+node_modules
+tests/
+tmp/
+logs/
